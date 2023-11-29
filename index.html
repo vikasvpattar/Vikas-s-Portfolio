@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="images/logo.png" />
+    <title>Vikas's Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/5fec0313e7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" alt="logo" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <!-- <li><a href="#services">Services</a></li> -->
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+      </div>
+    </div>
+    <!-- Main content -->
+    <main>
+      <div class="main">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-2 header-text">
+              <!-- <p>Full Stack Developer</p> -->
+              <h1>
+                Hi, I am <br />
+                <span>Vikas Pattar.</span> <br />
+                <div>I am a Passionate</div>
+                <span id="element"></span>
+              </h1>
+            </div>
+            <div class="about-col-1">
+              <img src="images/webdeveloper.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!----------------- about--------- -->
+    <section class="aboutMe">
+      <div id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+              <img src="images/animeImage.jpg" alt="user image" />
+            </div>
+            <div class="about-col-2">
+              <h1 class="sub-title">About Me</h1>
+              <p>
+                Hi, I am Vikas V. Pattar. Basically, I am from Gadag, Karnataka.
+                Full stack developer enthusiast. Looking for opportunities to
+                excel career in full-stack web development. I am skilled in
+                React JS, JavaScript, Node JS, Express JS, Mongo DB, HTML, CSS,
+                SQL, and eager to acquire more skills. I would love to learn new
+                tools and technologies required for web development. that are
+                hitting the market.
+              </p>
+              <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">
+                  Skills
+                </p>
+
+                <p class="tab-links" onclick="opentab('education')">
+                  Education
+                </p>
+                <p class="tab-links" onclick="opentab('experience')">
+                  Experience
+                </p>
+              </div>
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                  <li><span>React Js</span></li>
+                  <li><span>JavaScript</span></li>
+                  <li><span>Node JS</span></li>
+                  <li><span>Express JS</span></li>
+                  <li><span>Mongo DB</span></li>
+                  <li><span>My SQL</span></li>
+                  <li>
+                    <span>HTML and CSS</span>
+                  </li>
+                  <li>
+                    <span>Core Java</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="experience">
+                <ul>
+                  <li>Looking for an opportunity</li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="education">
+                <ul>
+                  <li>
+                    <span>Bachelor of Engineering - 8.25 CGPA</span><br />
+                    Tontadarya College of Engineering, Gadag <br />in year 2021
+                  </li>
+                  <li>
+                    <span>PUC - 78.66%</span><br />GOVT PU College, Gadag
+                    <br />in year 2017
+                  </li>
+                  <li>
+                    <span>SSLC - 86.88%</span><br />
+                    in year 2015
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ---------------services------------- -->
+    <!-- <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+              veniam! Fugit perferendis maxime, voluptates.
+            </p>
+            <a href="#">learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+              veniam! Fugit perferendis maxime, voluptates.
+            </p>
+            <a href="#">learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+              veniam! Fugit perferendis maxime, voluptates.
+            </p>
+            <a href="#">learn more</a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- -------portfolio-------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Works</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" alt="" />
+            <div class="layer">
+              <h3>Blogging Website</h3>
+              <p>
+                Created a blogging website where users can create, edit, and
+                delete posts. <br />
+                <strong>Technologies used: </strong> React JS, Node JS, Express
+                JS, and Mongo DB.
+              </p>
+              <a
+                href="https://github.com/vikasvpattar/Blogging-Website"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" alt="" />
+            <div class="layer">
+              <h3>Stock Wishlist Website</h3>
+              <p>
+                Created a website, where users can search the current price of
+                the stock and wishlist them.
+                <br /><strong>Technologies used: </strong> React Js and local
+                storage.
+              </p>
+              <a
+                href="https://astonishing-muffin-c862b3.netlify.app/"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" alt="" />
+            <div class="layer">
+              <h3>Fitness Exercises Website</h3>
+              <p>
+                Created a website where uses can search the exercises using
+                search box.
+                <strong>Technologies used: </strong> React JS, Material UI, and
+                Rapid API.
+              </p>
+              <a href="https://fitnessclub18.netlify.app/" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/vikasvpattar" target="_blank" class="btn">
+          see more</a
+        >
+      </div>
+    </div>
+
+    <!-- ----------contact--------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i>vikasvpattar18@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>9986218016</p>
+            <div class="social-icons">
+              <a
+                href="https://www.facebook.com/vikas.pattar.370/"
+                target="_blank"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/vikas-pattar/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://www.instagram.com/vikas.pattar/" target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <!-- <a href=""><i class="fa-brands fa-twitter"></i></a> -->
+            </div>
+            <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form action="" name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>&#169; Copy Rights Reserved</p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = 0;
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycby3YlafeZLaCjW1nxzXkLELxqBZLGVkbxGzOdTj3yka_2uVB4N_jTDFMK-4kttQ2cO_/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message Sent Successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Front End Developer,",
+          "Back End Developer,",
+          "Full Stack Developer",
+        ],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
